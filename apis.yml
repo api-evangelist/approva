@@ -1,8 +1,24 @@
 aid: approva
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/approva.png
 name: Approva
-description: 'Approva is a company surfaced as a portfolio company of sierra-ventures and added to the
-  API Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Approva is an all-in-one marketplace where mortgage brokers and lenders
+  interact with each other to create and fund deals, streamlining loan origination
+  and refinancing by connecting brokers with alternative and traditional lenders in
+  one place. Surfaced as a portfolio company of sierra-ventures and added to the API
+  Evangelist network for enrichment. Sector: fintech. At the time of profiling, Approva
+  operates a web marketplace at approva.co and does not publish a public API, developer
+  portal, or SDKs; this profile captures its identity and probed domain-security posture.'
 url: https://raw.githubusercontent.com/api-evangelist/approva/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -16,6 +32,11 @@ modified: '2026-07-17'
 tags:
 - Company
 - Fintech
+- Mortgage
+- Lending
+- Marketplace
+- Loans
+- Brokers
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +44,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/approva-domain-security.yml
+- type: LLMsTxt
+  url: llms/approva-llms.txt
 - type: Website
   url: https://approva.co/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
